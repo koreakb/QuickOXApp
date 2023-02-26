@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onTap() {
-    HapticFeedback.mediumImpact;
+    HapticFeedback.heavyImpact();
     setState(() {
       forOX = Random().nextInt(10);
     });
