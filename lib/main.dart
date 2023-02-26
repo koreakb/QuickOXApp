@@ -1,30 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:quick_o_x_app/screen/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.grey[400],
-        appBar: AppBar(
-          title: const Text(
-            'Quick',
-            style: TextStyle(
-              color: Colors.black87,
-              fontSize: 30,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          backgroundColor: Colors.grey[500],
-        ),
-      ),
+    return const MaterialApp(
+      home: HomeScreen(),
     );
   }
 }
